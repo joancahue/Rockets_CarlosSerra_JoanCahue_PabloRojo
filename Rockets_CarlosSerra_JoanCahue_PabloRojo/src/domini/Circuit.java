@@ -10,23 +10,12 @@ public class Circuit {
 		this.maxTime = maxTime;
 	}
 	
-	public static void nextMove(int time) {
-		
-		if(time < 3)
-			movement(15);
-		if(time > 2 && time < 5)
-			movement(10);
-		if(time > 4)
-			movement(2);
+	public double getMaxDistance() {
+		return this.maxDistance;
 	}
 	
-	public static void movement(int acceleration) {	
-		printMove();	
+	public int getMaxTime() {
+		return this.maxTime;
 	}
-	
-	public static void printMove() {
-		
-	}
-
 }
 
