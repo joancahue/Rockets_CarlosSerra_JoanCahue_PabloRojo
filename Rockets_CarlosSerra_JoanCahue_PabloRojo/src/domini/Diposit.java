@@ -4,7 +4,6 @@ public class Diposit {
 
 	private double liters;
 	
-	
 	public Diposit(double liters) {
 		this.liters = liters;
 	}
