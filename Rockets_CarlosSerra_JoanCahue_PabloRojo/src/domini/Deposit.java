@@ -1,10 +1,10 @@
 package domini;
 
-public class Diposit {
+public class Deposit {
 
 	private double liters;
 	
-	public Diposit(double liters) {
+	public Deposit(double liters) {
 		this.liters = liters;
 	}
 	
