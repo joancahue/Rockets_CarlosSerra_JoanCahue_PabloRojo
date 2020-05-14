@@ -1,5 +1,9 @@
+import domini.Circuit;
+import domini.Rocket;
 
 public class Main {
+	
+	public Rocket rocket;
 	
 	public static void Main(String [] args) {
 		
@@ -12,7 +16,7 @@ public class Main {
 		
 		System.out.println("Starting competition. Circuit length: 800 Max time: 10");
 		
-		while(time > maxTime && rocket.getLiters()) {
+		while(time > maxTime && rocket.getLiters() <= 0) {
 			
 			nextMove(time);
 			
@@ -32,7 +36,7 @@ public class Main {
 	
 	public static void movement(int acc) {	
 		
-		int speed = rocket.curr//getCurrentAcc()
+		//int speed = this.rocket.
 		
 		printMove();	
 	}
