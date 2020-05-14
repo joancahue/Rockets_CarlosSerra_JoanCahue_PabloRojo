@@ -12,6 +12,8 @@ public class Rocket {
 	private int acceleration;
 	private Deposit deposit;
 	private String nom;
+	
+	private int currentAcc;
 
 	
 	public Rocket() {
@@ -21,6 +23,7 @@ public class Rocket {
 		this.acceleration = sumaAcc();
 		this.deposit = new Deposit(1800);
 		this.nom = "Star V";
+		this.currentAcc = 0;
 	}
 	
 	private int sumaAcc() {
@@ -36,6 +39,18 @@ public class Rocket {
 
 	public String getNom() {
 		return nom;
+	}
+	
+	public double getLiters() {
+		return this.deposit.getLiters();
+	}
+	
+	public double getCurrentAcc() {
+		return this.currentAcc;
+	}
+	
+	public void setCurrentAcc(double acc) {
+		this.currentAcc = acc;
 	}
 	
 }

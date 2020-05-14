@@ -19,25 +19,16 @@ public class Propeller {
 		return this.currentAcceleration;
 	}
 	
-	public void increaseAcc(int acc) {
-		if (!(currentAcceleration == maxAcceleration)) {
-			if (currentAcceleration + acc > maxAcceleration) {
-				this.currentAcceleration = this.maxAcceleration;
-			}
-			else {
-				this.currentAcceleration = this.currentAcceleration + acc;
-			}
+	public void setCurrentAcceleration(int acc) {
+		
+		if(acc > this.maxAcceleration) {
+			this.currentAcceleration = this.maxAcceleration;
 		}
-	}
-	public void decreaseAcc(int acc) {
-		if (!(currentAcceleration == 0)) {
-			if (currentAcceleration - acc < 0) {
-				this.currentAcceleration = 0;
-			}
-			else {
-				this.currentAcceleration = this.currentAcceleration - acc;
-			}
+		else {
+			this.currentAcceleration = acc;
 		}
+		
+		this.currentAcceleration += acc;
 	}
 	
 }

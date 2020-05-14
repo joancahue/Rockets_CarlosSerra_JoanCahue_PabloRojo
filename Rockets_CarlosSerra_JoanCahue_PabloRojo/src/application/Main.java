@@ -10,9 +10,9 @@ public class Main {
 		
 		Rocket rocket = new Rocket();
 		
-		System.out.print("Starting competition. Circuit length: 800 Max time: 10");
+		System.out.println("Starting competition. Circuit length: 800 Max time: 10");
 		
-		while(time > maxTime) {
+		while(time > maxTime && rocket.getLiters()) {
 			
 			nextMove(time);
 			
@@ -21,19 +21,49 @@ public class Main {
 	
 	public static void nextMove(int time) {
 		
-		if(time < 3)
+		if(time < 3)//1 i 2
 			movement(15);
-		if(time > 2 && time < 5)
+		if(time > 2 && time < 5)//3 i 4
 			movement(10);
-		if(time > 4)
+		if(time > 4)// 5, 6, 7, 8, 9 i 10
 			movement(2);
+		
 	}
 	
-	public static void movement(int acceleration) {	
+	public static void movement(int acc) {	
+		
+		int speed = rocket.curr//getCurrentAcc()
+		
 		printMove();	
 	}
 	
-	public static void printMove() {
-		
+	public static void printMove(int time, int acc, int speed, int distance, double fuel) {
+		System.out.println("Current time: "+time+" Acceleration: "+acc+" Speed: "+speed+" Distance: "+distance+" Circuit: 800 Fuel: "+fuel+"/1800");
 	}
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

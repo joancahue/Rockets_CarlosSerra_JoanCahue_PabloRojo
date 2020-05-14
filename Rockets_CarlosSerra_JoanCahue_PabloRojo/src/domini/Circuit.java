@@ -17,5 +17,6 @@ public class Circuit {
 	public int getMaxTime() {
 		return this.maxTime;
 	}
+	
 }
 
